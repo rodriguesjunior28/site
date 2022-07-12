@@ -1,0 +1,129 @@
+.container {
+  max-width: 960px; /*Definição do tamnho do indice*/
+   
+}
+
+body {
+  margin: 0;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {   /*Faz parte do cabeçalho*/
+  background-color: rgba(30, 2, 66, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  height: 15%;
+  
+}
+
+.site-header a {
+  color: white;
+  transition: color .15s ease-in-out;
+   
+}
+
+.site-header a .h1 {
+  font-size: 50px;
+  text-align: left;
+  background-color: black;  
+}
+
+.site-header a:hover {
+  color: red; /*Letras do cabeçalho*/
+  text-decoration: none;
+  
+}
+
+.row {
+  height: 190px;   /*caixa vazada*/
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 45%;
+  
+}
+
+.row .h1{
+  color: red;
+  transition: color .15s ease-in-out;
+   
+}
+.row .card-body {
+  text-align: end;
+}
+
+.row .card-body .card-title {
+  text-align: end;
+  color: red;
+  padding: 5px;
+  margin-top: 0;
+  border-radius: 50%;
+
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+ .product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 700px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: white;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section, aside { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+}
+
+
+
+
